@@ -25,6 +25,7 @@ const StyledLoginContainer = styled.div`
 `;
 
 const login = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [signInWithGoogle, _user, _loading, _error] = useSignInWithGoogle(auth);
   const handleLoginWithGoogle = () => {
     signInWithGoogle();
